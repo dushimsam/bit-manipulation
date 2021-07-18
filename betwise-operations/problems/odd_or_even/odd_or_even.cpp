@@ -10,15 +10,7 @@ bool isEven(int num)
 }
 
 int main(){
-cout << " 14  is Even "<<
-isEven(14)
-? cout << "Even"
-: cout << "Odd";
-<<"\n";
-cout << " 11  is Even "
-<<isEven(14)
-? cout << "Even"
-: cout << "Odd";
-<<"\n";
+cout << " 14  is Even "<<isEven(14)<<"\n";
+cout << " 11  is Even "<<isEven(11)<<"\n";
     return 0;
 }
