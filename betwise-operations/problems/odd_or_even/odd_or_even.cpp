@@ -3,14 +3,13 @@ using namespace std;
 
 bool isEven(int num)
 {
-    if(num ^ 1 == num+1)
-       return true;
-    else 
-       return false;
+ return !(num & 1);
 }
 
 int main(){
-cout << " 14  is Even "<<isEven(14)<<"\n";
-cout << " 11  is Even "<<isEven(11)<<"\n";
+ int n = 14;
+    isEven(n)
+? cout << "Even"
+: cout << "Odd";
     return 0;
 }
