@@ -1,17 +1,18 @@
 #include <iostream>
 using namespace std;
-
-bool isEven(int num)
+ int countSetBits( int n)
 {
-    if(num ^ 1 == num+1)
-       return true;
-    else 
-       return false;
+     int count = 0;
+    while (n) {
+        count += n & 1;
+        n >>= 1;
+    }
+    return count;
 }
-
-int main(){
-cout << " 14  is Even "<<
-isEven(14)? cout << "Even": cout << "Odd"<<"\n";
-cout << " 11  is Even "<<isEven(14)? cout << "Even" : cout << "Odd" <<"\n";
+ 
+int main()
+{
+    int i = 9;
+    cout << countSetBits(i);
     return 0;
 }
